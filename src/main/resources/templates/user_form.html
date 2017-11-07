@@ -1,0 +1,17 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>please sign in</title>
+</head>
+
+<body>	
+	<h2>user form:</h2>
+				<form action="#" th:action="@{/user}" th:object="${user}" method="post">
+						<input type="text" th:field="*{name}" placeholder="name" />
+						<input type="submit" value="Submit" /> 
+				</form>
+			
+</body>
+
+
+</html>
