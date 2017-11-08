@@ -28,11 +28,10 @@ public class UserController {
 	
 	
 	@PostMapping
-	public String saveForm(@ModelAttribute User user, @ModelAttribute User candidate, Model m, SessionStatus status, HttpSession session){
+	public String saveForm(@ModelAttribute User user, Model m, SessionStatus status, HttpSession session){
 //		status.setComplete(); // removes attributes from session	
 //		Enumeration<String> e = session.getAttributeNames();
 //		while (e.hasMoreElements()){ System.out.println( e.nextElement()); }
-		 
 		System.out.println("candidate from session: "+ session.getAttribute("candidate"));
 		System.out.println("user from session: "+ session.getAttribute("user"));  
 		System.out.println("user from form: "+ user);
