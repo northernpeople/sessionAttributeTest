@@ -1,21 +1,35 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>Hello Toby!</title>
+	<title>Hello Toby!</title>
+	
+	
+	  <style type="text/css">
+            html, body {
+                margin: 0;
+                padding: 0;
+            }
 
-
-<script type="text/javascript" src="http://localhost:8080/assets/js/start2.js"></script>
-
+            #map path {
+                fill: #DEDEDE;
+                stroke: #FFFFFF;
+                stroke-width: 0.5;
+            }
+        </style>
+	        
+	        
 </head>
 
 <body>	
-	<h2>user form:</h2>
-				<form action="#" th:action="@{/user}" th:object="${user}" method="post">
-						<input type="text" th:field="*{name}" placeholder="name" />
-						<input type="submit" value="Submit" /> 
-				</form>
+		
+			        <svg></svg>
 			
 </body>
 
+
+<script src="http://d3js.org/d3.v3.js"></script>
+	<script type="text/javascript" src="http://localhost:8080/assets/js/d3_first.js"></script>
+	
+	
 
 </html>
